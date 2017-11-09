@@ -1,0 +1,34 @@
+$breakpoint-desktop: 1440px;
+$breakpoint-laptop: 1100px;
+$breakpoint-mobile: 599px;
+
+
+@mixin DesktopOnly() {
+  @media screen and (min-width: $breakpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin LaptopOnly() {
+  @media screen and (max-width: $breakpoint-desktop) and (min-width: $breakpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin LaptopAndSmaller() {
+  @media screen and (max-width: $breakpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin TabletAndBigger() {
+  @media screen and (min-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin MobileOnly() {
+  @media screen and (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}

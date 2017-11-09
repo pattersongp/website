@@ -1,0 +1,100 @@
+/*---Content-Globals---*/
+p {
+  text-align: center;
+  text-decoration-color: #0284F0;
+  background-color: #5EAFF2;
+  padding: 10px;
+}
+h1 {
+	text-align: center;
+	color: #F3F9FE;
+}
+h2 {
+	padding: 10px;
+	color: #F3F9FE;
+}
+.float-right {
+	background-color: #5EAFF2;
+}
+
+/*-----Desktop-----*/
+@include DesktopOnly() {
+	.float-right {
+		position: absolute;
+		top: 10%;
+		right: 0;
+		overflow: auto;
+		max-width: 50%;
+	}
+
+	p #text {
+		position: relative;
+		max-height: 100%;
+		max-width: 100%;
+		margin: 0; 
+		background: transparent;
+	}
+}
+
+/*-----Laptop-----*/
+@include LaptopOnly() {
+	.float-right {
+		position: absolute;
+		top: 10%;
+		right: 0;
+		overflow: auto;
+		max-width: 50%;
+	}
+
+	p #text {
+		position: relative;
+		max-height: 100%;
+		max-width: 100%;
+		margin: 0; 
+		background: transparent;
+	}
+}
+
+/*-----Laptop_Smaller-----*/
+@include LaptopAndSmaller() {
+	.float-right {
+		float: right;
+		position: absolute;
+		max-width: 100%;
+		top: 100%;
+		right: 0;
+		overflow: auto;
+	}
+
+	p #text {
+		position: relative;
+		max-height: 100%;
+		max-width: 100%;
+		margin: 0; 
+		padding: 5px;
+		background: transparent;
+	}
+}
+
+/*---Mobile---*/
+@include MobileOnly() {
+	.float-right {
+		position: absolute;
+		max-width: 100%;
+		top: 100%;
+		left: 0;
+		right: 0;
+		overflow: auto;
+		width: 100%;
+	}
+
+	p #text {
+		position: relative;
+		max-height: 100%;
+		max-width: 100%;
+		margin: 0px; 
+		padding: 15px;
+		background: transparent;
+	}
+}
+

@@ -1,0 +1,33 @@
+html {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 22px;
+  background-color: #5EAFF2;
+}
+
+h2 i {
+    color: #A9DAFF;
+}
+
+h2 {
+    color: #A9DAFF;
+}
+
+a:link {
+    color: #003D6B;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ACCCFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ACCCFF;
+    text-decoration: line-through;
+}
+
+a:active {
+    color: red;
+    text-decoration: line-through;
+}
